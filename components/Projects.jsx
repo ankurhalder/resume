@@ -3,31 +3,30 @@ import PropTypes from "prop-types";
 const Projects = ({ projects }) => {
   return (
     <div>
+      <h2>Projects</h2>
       {projects.map((project, index) => (
         <div key={index}>
           <img src={project.logo} alt={project.title} />
           <h3>{project.title}</h3>
-          <p>Duration: {project.duration}</p>
-          <p>Organization: {project.organization}</p>
-          <p>Description: {project.description}</p>
-          <h4>Technologies Used:</h4>
-          <ul>
-            {project.technologies.map((tech, idx) => (
-              <li key={idx}>{tech}</li>
-            ))}
-          </ul>
-          <p>Skills Gained: {project.skillsGained.join(", ")}</p>
-          <p>Event Date: {project.eventDate}</p>
-          <p>Additional Info: {project.additionalInfo}</p>
-          <p>Hashtags: {project.hashtags.join(", ")}</p>
+          <p>{project.duration}</p>
+          <p>{project.organization}</p>
+          <p>{project.description}</p>
+          {project.technologies && project.technologies.length > 0 && (
+            <p>Technologies: {project.technologies.join(", ")}</p>
+          )}
+          {project.skillsGained && project.skillsGained.length > 0 && (
+            <p>Skills Gained: {project.skillsGained.join(", ")}</p>
+          )}
+          {project.eventDate && <p>Event Date: {project.eventDate}</p>}
+          {project.additionalInfo && (
+            <p>Additional Info: {project.additionalInfo}</p>
+          )}
+          {project.hashtags && project.hashtags.length > 0 && (
+            <p>Hashtags: {project.hashtags.join(", ")}</p>
+          )}
           <p>
-            <a
-              href={project.projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Project Link
-            </a>
+            Project Link:{" "}
+            <a href={project.projectLink}>{project.projectLink}</a>
           </p>
         </div>
       ))}
@@ -38,19 +37,19 @@ const Projects = ({ projects }) => {
 Projects.propTypes = {
   projects: PropTypes.arrayOf(
     PropTypes.shape({
-      logo: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      duration: PropTypes.string.isRequired,
-      organization: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-      skillsGained: PropTypes.arrayOf(PropTypes.string).isRequired,
-      eventDate: PropTypes.string.isRequired,
-      additionalInfo: PropTypes.string.isRequired,
-      hashtags: PropTypes.arrayOf(PropTypes.string).isRequired,
-      projectLink: PropTypes.string.isRequired,
+      logo: PropTypes.string,
+      title: PropTypes.string,
+      duration: PropTypes.string,
+      organization: PropTypes.string,
+      description: PropTypes.string,
+      technologies: PropTypes.arrayOf(PropTypes.string),
+      skillsGained: PropTypes.arrayOf(PropTypes.string),
+      eventDate: PropTypes.string,
+      additionalInfo: PropTypes.string,
+      hashtags: PropTypes.arrayOf(PropTypes.string),
+      projectLink: PropTypes.string,
     })
-  ).isRequired,
+  ),
 };
 
 export default Projects;

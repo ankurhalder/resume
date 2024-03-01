@@ -1,16 +1,21 @@
 import { Fragment } from "react";
-
-import { PersonalInfo } from "../components";
-
+import {
+  PersonalInfo,
+  Education,
+  Skills,
+  Courses,
+  Projects,
+  SocialMedia,
+  ContactInfo,
+} from "../components";
 import {
   personalInfo,
-  // education,
-  // skills,
-  // internships,
-  // courses,
-  // projects,
-  // social,
-  // contact,
+  education,
+  skills,
+  courses,
+  projects,
+  social,
+  contact,
 } from "../data";
 
 function App() {
@@ -18,13 +23,12 @@ function App() {
     <Fragment>
       <div>
         <PersonalInfo personalInfo={personalInfo} />
-        {/* {JSON.stringify(education)}
-        {JSON.stringify(skills)}
-        {JSON.stringify(internships)}
-        {JSON.stringify(courses)}
-        {JSON.stringify(projects)}
-        {JSON.stringify(social)}
-        {JSON.stringify(contact)} */}
+        <Education education={education} />
+        <Skills skills={skills} />
+        <Courses courses={courses} />
+        <Projects projects={projects} />
+        <SocialMedia socialMedia={social} />
+        <ContactInfo contact={contact} />
       </div>
     </Fragment>
   );
