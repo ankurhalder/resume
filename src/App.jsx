@@ -1,10 +1,29 @@
 import { Fragment } from "react";
 
+import {
+  personalInfo,
+  education,
+  skills,
+  internships,
+  courses,
+  projects,
+  social,
+  contact,
+} from "../data";
+
 function App() {
   return (
     <Fragment>
-      <h1>Hello, World!</h1>
-      <p>This is a Ankur Halder&apos;s CV.</p>
+      <div>
+        {JSON.stringify(personalInfo)}
+        {JSON.stringify(education)}
+        {JSON.stringify(skills)}
+        {JSON.stringify(internships)}
+        {JSON.stringify(courses)}
+        {JSON.stringify(projects)}
+        {JSON.stringify(social)}
+        {JSON.stringify(contact)}
+      </div>
     </Fragment>
   );
 }
