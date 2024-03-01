@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 
+import { PersonalInfo } from "../components";
+
 import {
   personalInfo,
   education,
@@ -15,7 +17,7 @@ function App() {
   return (
     <Fragment>
       <div>
-        {JSON.stringify(personalInfo)}
+        <PersonalInfo personalInfo={personalInfo} />
         {JSON.stringify(education)}
         {JSON.stringify(skills)}
         {JSON.stringify(internships)}
