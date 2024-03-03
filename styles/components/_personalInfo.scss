@@ -12,14 +12,14 @@
   }
   .personal-info {
     @include flex-container(row, nowrap, center, center);
-
+    gap: 20px;
     .profile-image {
-      width: 200px;
-      height: 200px;
+      width: 100%;
+      max-width: 170px;
+      height: 100%;
       border-radius: 50%;
       margin-bottom: 30px;
-      object-fit: cover;
-      border: 6px solid #ffffff;
+      border: 2px solid var(--black);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
 
@@ -29,7 +29,7 @@
     }
 
     .info {
-      text-align: center;
+      @include flex-container(column, nowrap, center, flex-start);
 
       .name {
         font-size: 36px;
@@ -48,6 +48,7 @@
       }
 
       .details {
+        @include flex-container(column, nowrap, flex-start, flex-start);
         margin-top: 30px;
 
         .detail {
@@ -77,11 +78,11 @@
         line-height: 1.6;
       }
     }
-  }
-  .name,
-  .title,
-  .detail,
-  .about {
-    overflow-wrap: break-word;
+    .name,
+    .title,
+    .detail,
+    .about {
+      overflow-wrap: break-word;
+    }
   }
 }
