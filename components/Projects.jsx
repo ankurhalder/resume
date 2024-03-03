@@ -1,55 +1,84 @@
-import PropTypes from "prop-types";
+import projects from "../data/projects"; // Adjust the path as per your project structure
 
-const Projects = ({ projects }) => {
+function Projects() {
   return (
-    <div>
-      <h2>Projects</h2>
+    <div className="projects-container">
+      <h2 className="section-title">Projects</h2>
       {projects.map((project, index) => (
-        <div key={index}>
-          <img src={project.logo} alt={project.title} />
-          <h3>{project.title}</h3>
-          <p>{project.duration}</p>
-          <p>{project.organization}</p>
-          <p>{project.description}</p>
-          {project.technologies && project.technologies.length > 0 && (
-            <p>Technologies: {project.technologies.join(", ")}</p>
-          )}
-          {project.skillsGained && project.skillsGained.length > 0 && (
-            <p>Skills Gained: {project.skillsGained.join(", ")}</p>
-          )}
-          {project.eventDate && <p>Event Date: {project.eventDate}</p>}
-          {project.additionalInfo && (
-            <p>Additional Info: {project.additionalInfo}</p>
-          )}
-          {project.hashtags && project.hashtags.length > 0 && (
-            <p>Hashtags: {project.hashtags.join(", ")}</p>
-          )}
-          <p>
-            Project Link:{" "}
-            <a href={project.projectLink}>{project.projectLink}</a>
+        <div key={index} className="project">
+          <img
+            src={project.logo}
+            alt={project.title}
+            className="project-logo"
+          />
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-duration">
+            <strong>Duration:</strong> {project.duration}
           </p>
+          <p className="project-organization">
+            <strong>Organization:</strong> {project.organization}
+          </p>
+          <p className="project-description">{project.description}</p>
+          <div className="technologies-used">
+            <p>
+              <strong>Technologies Used:</strong>
+            </p>
+            <ul className="technologies-list">
+              {project.technologies.map((tech, idx) => (
+                <li key={idx}>{tech}</li>
+              ))}
+            </ul>
+          </div>
+          {project.features && (
+            <div className="project-features">
+              <p>
+                <strong>Features:</strong>
+              </p>
+              <ul className="features-list">
+                {project.features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {project.navigationLinks && (
+            <div className="project-navigation-links">
+              <p>
+                <strong>Navigation Links:</strong>
+              </p>
+              <ul className="navigation-links-list">
+                {project.navigationLinks.map((link, idx) => (
+                  <li key={idx}>{link}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {project.projectLink && (
+            <p className="project-link">
+              <a
+                href={project.projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </p>
+          )}
+          {project.githubUrl && (
+            <p className="project-github-link">
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </p>
+          )}
         </div>
       ))}
     </div>
   );
-};
-
-Projects.propTypes = {
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      logo: PropTypes.string,
-      title: PropTypes.string,
-      duration: PropTypes.string,
-      organization: PropTypes.string,
-      description: PropTypes.string,
-      technologies: PropTypes.arrayOf(PropTypes.string),
-      skillsGained: PropTypes.arrayOf(PropTypes.string),
-      eventDate: PropTypes.string,
-      additionalInfo: PropTypes.string,
-      hashtags: PropTypes.arrayOf(PropTypes.string),
-      projectLink: PropTypes.string,
-    })
-  ),
-};
+}
 
 export default Projects;
