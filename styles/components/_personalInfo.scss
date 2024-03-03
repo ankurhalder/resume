@@ -1,13 +1,13 @@
 /* PersonalInfo.scss */
 
 .personal-info-container {
+  position: relative; /* Ensure proper stacking context */
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9; /* Light gray background */
-  transition: transform 0.5s ease-in-out;
   overflow: hidden;
   overflow-wrap: break-word;
+  transition: transform 0.5s ease-in-out;
 
   &:hover {
     transform: translateY(-5px);
@@ -23,8 +23,8 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      object-fit: cover; /* Ensure image covers the container */
-      border: 4px solid #ffffff; /* White border */
+      object-fit: cover;
+      border: 4px solid #ffffff;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
 
@@ -43,6 +43,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       .title {
@@ -50,13 +51,15 @@
         color: #666666;
         font-style: italic;
         margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       }
 
       .details {
         margin-top: 20px;
-        background-color: #f0f0f0; /* Light gray background for details */
+        background-color: #f0f0f0;
         padding: 20px;
         border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       .detail {
@@ -86,5 +89,24 @@
         line-height: 1.6;
       }
     }
+  }
+
+  /* Gradient background overlay with smoother transition */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #007bff, #00bfff);
+    opacity: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover:before {
+    opacity: 0.6;
   }
 }
