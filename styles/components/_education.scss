@@ -5,6 +5,7 @@
   box-shadow: 0 10px 20px var(--black-shadow-light);
   overflow: hidden;
   overflow-wrap: break-word;
+  margin: 0 0 2% 0;
   transition: transform 0.5s ease-in-out;
   @include flex-container(column, nowrap, center, space-between);
   gap: 20px;
