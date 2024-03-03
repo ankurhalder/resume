@@ -16,26 +16,35 @@ function PersonalInfo() {
 
           <div className="details">
             <p className="detail">
-              <strong>Age:</strong> {personalInfo.age}
+              <strong>Age:</strong>
+              <span>{personalInfo.age}</span>
             </p>
             <p className="detail">
-              <strong>Gender:</strong> {personalInfo.gender}
+              <strong>Gender:</strong>
+              <span>{personalInfo.gender}</span>
             </p>
             <p className="detail">
-              <strong>Date of Birth:</strong> {personalInfo.dateOfBirth}
+              <strong>Date of Birth:</strong>
+              <span>{personalInfo.dateOfBirth}</span>
             </p>
             <p className="detail">
-              <strong>Languages Known:</strong>{" "}
+              <strong>Languages Known:</strong>
+
+              <span></span>
+
               {personalInfo.languagesKnown.join(", ")}
             </p>
             <p className="detail">
-              <strong>Address:</strong> {personalInfo.address}
+              <strong>Address:</strong>
+              <span>{personalInfo.address}</span>
             </p>
             <p className="detail">
-              <strong>Email:</strong> {personalInfo.email}
+              <strong>Email:</strong>
+              <span>{personalInfo.email}</span>
             </p>
             <p className="detail">
-              <strong>Website:</strong>{" "}
+              <strong>Website:</strong>
+
               <a
                 className="website-link"
                 href={`https://${personalInfo.website}`}
