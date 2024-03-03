@@ -5,6 +5,8 @@ function PersonalInfo() {
   return (
     <Fragment>
       <div className="personal-info-container">
+        <h1 className="name">{personalInfo.name}</h1>
+        <h2 className="title">{personalInfo.title}</h2>
         <div className="personal-info">
           <img
             className="profile-image"
@@ -12,8 +14,6 @@ function PersonalInfo() {
             alt={personalInfo.name}
           />
           <div className="info">
-            <h1 className="name">{personalInfo.name}</h1>
-            <h2 className="title">{personalInfo.title}</h2>
             <div className="details">
               <p className="detail">
                 <strong>Age:</strong> {personalInfo.age}
