@@ -57,10 +57,7 @@ function PersonalInfo() {
           </div>
         </div>
 
-        <p className="about">
-          {/* <strong>About:</strong> */}
-          {personalInfo.about}
-        </p>
+        <p className="about">{personalInfo.about}</p>
       </div>
     </Fragment>
   );
