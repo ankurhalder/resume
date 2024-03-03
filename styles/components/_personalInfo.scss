@@ -115,6 +115,8 @@
       @media (max-width: $breakpoint-large-tablet) {
       }
       @media (max-width: $breakpoint-tablet) {
+        margin: 0 0 2% 0;
+        padding: 10px;
       }
       @media (max-width: $breakpoint-phone) {
       }
@@ -201,6 +203,7 @@
     @media (max-width: $breakpoint-large-tablet) {
     }
     @media (max-width: $breakpoint-tablet) {
+      font-size: var(--font-10);
     }
     @media (max-width: $breakpoint-phone) {
     }
