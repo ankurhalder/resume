@@ -1,4 +1,4 @@
-import projects from "../data/projects"; // Adjust the path as per your project structure
+import projects from "../data/projects";
 
 function Projects() {
   return (

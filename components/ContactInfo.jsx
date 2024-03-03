@@ -1,6 +1,4 @@
-import contact from "../data/contact"; // Adjust the path as per your project structure
-
-// Contact component
+import contact from "../data/contact";
 function Contact() {
   const { email, phone, nationality } = contact;
 

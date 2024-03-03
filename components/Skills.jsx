@@ -1,4 +1,4 @@
-import skills from "../data/skills"; // Adjust the path as per your project structure
+import skills from "../data/skills";
 
 function Skills() {
   return (

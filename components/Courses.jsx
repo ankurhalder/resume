@@ -1,5 +1,4 @@
-import courses from "../data/courses"; // Adjust the path as per your project structure
-
+import courses from "../data/courses";
 function Courses() {
   return (
     <div className="courses-container">

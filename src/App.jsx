@@ -9,16 +9,6 @@ import {
   ContactInfo,
   InternshipCard,
 } from "../components";
-// import {
-//   personalInfo,
-//   education,
-//   skills,
-//   courses,
-//   projects,
-//   internships,
-//   social,
-//   contact,
-// } from "../data";
 
 function App() {
   return (

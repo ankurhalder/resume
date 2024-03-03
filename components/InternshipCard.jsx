@@ -1,7 +1,5 @@
-import internships from "../data/internships"; // Adjust the path as per your project structure
-
-// Component for displaying each internship card
-import PropTypes from "prop-types"; // Import PropTypes
+import internships from "../data/internships";
+import PropTypes from "prop-types";
 
 function InternshipCard({ internship }) {
   const {

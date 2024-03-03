@@ -1,6 +1,4 @@
-import socialMedia from "../data/social"; // Adjust the path as per your project structure
-
-// Component for displaying social media links
+import socialMedia from "../data/social";
 function SocialMediaLinks() {
   return (
     <div className="social-media-links">

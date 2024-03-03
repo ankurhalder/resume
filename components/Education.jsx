@@ -1,4 +1,4 @@
-import education from "../data/education"; // Adjust the path as per your project structure
+import education from "../data/education";
 
 function Education() {
   return (
