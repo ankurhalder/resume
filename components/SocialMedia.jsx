@@ -1,29 +1,25 @@
-import PropTypes from "prop-types";
+import socialMedia from "../data/social"; // Adjust the path as per your project structure
 
-const SocialMedia = ({ socialMedia }) => {
+// Component for displaying social media links
+function SocialMediaLinks() {
   return (
-    <div>
-      {Object.keys(socialMedia).map((platform) => (
+    <div className="social-media-links">
+      {Object.keys(socialMedia).map((platform, index) => (
         <a
-          key={platform}
+          key={index}
           href={socialMedia[platform].url}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={socialMedia[platform].image} alt={platform} />
+          <img
+            src={socialMedia[platform].image}
+            alt={platform}
+            className="social-media-icon"
+          />
         </a>
       ))}
     </div>
   );
-};
+}
 
-SocialMedia.propTypes = {
-  socialMedia: PropTypes.objectOf(
-    PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
-
-export default SocialMedia;
+export default SocialMediaLinks;

@@ -7,28 +7,31 @@ import {
   Projects,
   SocialMedia,
   ContactInfo,
+  InternshipCard,
 } from "../components";
-import {
-  personalInfo,
-  education,
-  skills,
-  courses,
-  projects,
-  social,
-  contact,
-} from "../data";
+// import {
+//   personalInfo,
+//   education,
+//   skills,
+//   courses,
+//   projects,
+//   internships,
+//   social,
+//   contact,
+// } from "../data";
 
 function App() {
   return (
     <Fragment>
       <div>
-        <PersonalInfo personalInfo={personalInfo} />
-        <Education education={education} />
-        <Skills skills={skills} />
-        <Courses courses={courses} />
-        <Projects projects={projects} />
-        <SocialMedia socialMedia={social} />
-        <ContactInfo contact={contact} />
+        <PersonalInfo></PersonalInfo>
+        <Education></Education>
+        <Skills></Skills>
+        <Courses></Courses>
+        <Projects></Projects>
+        <InternshipCard></InternshipCard>
+        <SocialMedia></SocialMedia>
+        <ContactInfo></ContactInfo>
       </div>
     </Fragment>
   );
