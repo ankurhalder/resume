@@ -1,58 +1,67 @@
+/* Education.scss */
+
 .education-container {
   padding: 30px;
   border-radius: 20px;
   background-color: #f9f9f9;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+  overflow: hidden;
 
-.section-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.education-item {
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  .degree {
-    font-size: 24px;
+  .section-title {
+    font-size: 36px;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
-  .institution {
-    color: #666666;
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
+  .education-item {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
 
-  .details {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
-    .detail {
-      flex: 0 0 48%;
+    .degree {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .institution {
+      color: #666666;
+      font-size: 20px;
       margin-bottom: 15px;
+    }
 
-      strong {
-        font-weight: bold;
-        color: #333333;
-        margin-right: 5px;
+    .details {
+      margin-top: 20px;
+
+      .detail {
+        margin-bottom: 10px;
+        color: #555555;
+        display: flex;
+        align-items: center;
+
+        strong {
+          color: #333333;
+          margin-right: 10px;
+          width: 150px;
+          display: inline-block;
+        }
+
+        span {
+          flex: 1;
+        }
       }
     }
   }
