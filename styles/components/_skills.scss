@@ -1,43 +1,78 @@
 .skills-container {
   padding: 40px;
-}
 
-.section-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.skill-category {
-  margin-bottom: 40px;
-
-  .category {
-    font-size: 24px;
+  .section-title {
+    font-size: 36px;
     font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px;
   }
 
-  .skill-list {
-    list-style-type: none;
-    padding: 0;
+  .skill-category {
+    margin-bottom: 40px;
+    position: relative;
 
-    .skill {
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 20px;
-      background-color: #007bff;
-      color: #ffffff;
-      font-size: 18px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .category {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
 
-      &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+    .skill-list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .skill {
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 18px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        &::before {
+          background: radial-gradient(circle at top left, #fff, #007bff);
+          transform: scale(0);
+        }
+
+        &::after {
+          background: radial-gradient(circle at bottom right, #fff, #007bff);
+          transform: scale(0);
+        }
+
+        &:hover::before,
+        &:hover::after {
+          transform: scale(2);
+          opacity: 0;
+        }
       }
     }
   }
