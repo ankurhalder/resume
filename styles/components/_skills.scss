@@ -45,7 +45,7 @@
   .skill-category {
     flex: 1;
     background-color: var(--white-4);
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     @media (max-width: $breakpoint-desktop-wide) {
@@ -91,7 +91,7 @@
       .skill {
         padding: 10px 20px;
         background-color: var(--blue-1);
-        margin: 0 3% 3% 0;
+        margin: 0 1% 1% 0;
         border-radius: 10px;
         cursor: pointer;
         position: relative;
