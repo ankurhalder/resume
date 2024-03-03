@@ -55,7 +55,6 @@ InternshipCard.propTypes = {
   }).isRequired,
 };
 
-// Main Internships component
 function Internships() {
   return (
     <div className="internships-container">
