@@ -6,6 +6,7 @@
   overflow: hidden;
   overflow-wrap: break-word;
   transition: transform 0.5s ease-in-out;
+  margin: 0 0 2% 0;
   @include flex-container(column, nowrap, center, space-between);
   @media (max-width: $breakpoint-desktop-wide) {
   }
