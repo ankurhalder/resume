@@ -86,28 +86,35 @@
     }
 
     .skill-list {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-
+      @include flex-container(row, wrap, flex-start, flex-start);
       margin: 0 0 0 3%;
       .skill {
         padding: 10px 20px;
-        border-radius: 25px;
-        background-color: #007bff;
-        color: #ffffff;
-        font-size: 18px;
-        margin-right: 15px;
-        margin-bottom: 15px;
+        background-color: var(--blue-1);
+        margin: 0 3% 3% 0;
+        border-radius: 10px;
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        font-family: var(--font-roboto);
+        font-size: var(--font-12);
+        color: var(--white);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+          padding: 7px 14px;
+          font-size: var(--font-11);
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
         &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
+          transform: scale(1.05);
+          box-shadow: 0 8px 16px -5px rgba(0, 123, 255, 0.5);
         }
 
         &::before,
@@ -119,23 +126,7 @@
           width: 100%;
           height: 100%;
           border-radius: 25px;
-          transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        &::before {
-          background: radial-gradient(circle at top left, #fff, #007bff);
-          transform: scale(0);
-        }
-
-        &::after {
-          background: radial-gradient(circle at bottom right, #fff, #007bff);
-          transform: scale(0);
-        }
-
-        &:hover::before,
-        &:hover::after {
-          transform: scale(2);
-          opacity: 0;
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
       }
     }
@@ -147,10 +138,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #007bff, #00bfff);
-    // background-repeat: repeat;
-    // background-size: 10% 10%;
-    // background-position: 0 0;
+    background: linear-gradient(45deg, var(--blue-1), #00bfff);
     opacity: 0;
     border-radius: 20px;
     z-index: -1;
