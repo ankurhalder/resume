@@ -1,0 +1,15 @@
+.social-media-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.2);
+}

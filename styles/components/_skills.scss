@@ -1,0 +1,23 @@
+.skills-container {
+  margin-top: 20px;
+}
+
+.skill-category {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
