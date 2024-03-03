@@ -1,20 +1,30 @@
-import PropTypes from "prop-types";
+import courses from "../data/courses"; // Adjust the path as per your project structure
 
-const Courses = ({ courses }) => {
+function Courses() {
   return (
-    <div>
+    <div className="courses-container">
+      <h2 className="section-title">Courses</h2>
       {courses.map((course, index) => (
-        <div key={index}>
-          <h3>{course.title}</h3>
-          <p>Provider: {course.provider}</p>
-          <p>Completion Date: {course.completionDate}</p>
-          <p>Description: {course.description}</p>
-          <ul>
+        <div key={index} className="course">
+          <h3 className="title">{course.title}</h3>
+          <p className="provider">
+            <strong>Provider:</strong> {course.provider}
+          </p>
+          <p className="completion-date">
+            <strong>Completion Date:</strong> {course.completionDate}
+          </p>
+          <p className="description">{course.description}</p>
+          <p className="topics">
+            <strong>Topics:</strong>
+          </p>
+          <ul className="topics-list">
             {course.topics.map((topic, idx) => (
-              <li key={idx}>{topic}</li>
+              <li key={idx} className="topic">
+                {topic}
+              </li>
             ))}
           </ul>
-          <p>
+          <p className="certificate-link">
             <a
               href={course.certificateLink}
               target="_blank"
@@ -24,29 +34,14 @@ const Courses = ({ courses }) => {
             </a>
           </p>
           <img
+            className="certificate-image"
             src={course.certificateImageUrl}
-            alt={`${course.title} Certificate`}
+            alt={course.title}
           />
-          <p>Skills Gained: {course.skillsGained.join(", ")}</p>
         </div>
       ))}
     </div>
   );
-};
-
-Courses.propTypes = {
-  courses: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      provider: PropTypes.string.isRequired,
-      completionDate: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      topics: PropTypes.arrayOf(PropTypes.string).isRequired,
-      certificateLink: PropTypes.string.isRequired,
-      certificateImageUrl: PropTypes.string.isRequired,
-      skillsGained: PropTypes.arrayOf(PropTypes.string).isRequired,
-    })
-  ).isRequired,
-};
+}
 
 export default Courses;

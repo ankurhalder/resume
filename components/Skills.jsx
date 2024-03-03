@@ -1,29 +1,23 @@
-import PropTypes from "prop-types";
+import skills from "../data/skills"; // Adjust the path as per your project structure
 
-const Skills = ({ skills }) => {
+function Skills() {
   return (
-    <div>
+    <div className="skills-container">
+      <h2 className="section-title">Skills</h2>
       {skills.map((skillCategory, index) => (
-        <div key={index}>
-          <h3>{skillCategory.category}</h3>
-          <ul>
+        <div key={index} className="skill-category">
+          <h3 className="category">{skillCategory.category}</h3>
+          <ul className="skill-list">
             {skillCategory.list.map((skill, idx) => (
-              <li key={idx}>{skill}</li>
+              <li key={idx} className="skill">
+                {skill}
+              </li>
             ))}
           </ul>
         </div>
       ))}
     </div>
   );
-};
-
-Skills.propTypes = {
-  skills: PropTypes.arrayOf(
-    PropTypes.shape({
-      category: PropTypes.string.isRequired,
-      list: PropTypes.arrayOf(PropTypes.string).isRequired,
-    })
-  ).isRequired,
-};
+}
 
 export default Skills;
