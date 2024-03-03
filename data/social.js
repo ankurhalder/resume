@@ -3,6 +3,10 @@ const socialMedia = {
     url: "https://www.linkedin.com/in/ankurhalder",
     image: "/social/linkedin.png",
   },
+  leetcode: {
+    url: "https://leetcode.com/ankurhalder",
+    image: "/social/leetcode.png",
+  },
   instagram: {
     url: "https://www.instagram.com/halder_ankur",
     image: "/social/instagram.png",
@@ -10,10 +14,6 @@ const socialMedia = {
   facebook: {
     url: "https://www.facebook.com/ankur.roxx.9",
     image: "/social/facebook.png",
-  },
-  leetcode: {
-    url: "https://leetcode.com/ankurhalder",
-    image: "/social/leetcode.png",
   },
 };
 
