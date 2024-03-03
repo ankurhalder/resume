@@ -46,7 +46,7 @@
 
       &:hover {
         transform: scale(1.05);
-        filter: brightness(0.8);
+        filter: brightness(1.1);
       }
     }
 
@@ -82,14 +82,14 @@
           }
         }
       }
-
-      .about {
-        margin-top: 30px;
-        font-size: 20px;
-        color: #666666;
-        line-height: 1.6;
-      }
     }
+  }
+  .about {
+    font-family: var(--font-roboto);
+    color: var(--black);
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: var(--font-11);
   }
 
   &:before {
@@ -103,10 +103,10 @@
     opacity: 0;
     border-radius: 20px;
     z-index: -1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
   }
 
   &:hover:before {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }
