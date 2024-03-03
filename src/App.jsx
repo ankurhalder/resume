@@ -13,7 +13,7 @@ import {
 function App() {
   return (
     <Fragment>
-      <div>
+      <div className="wrapper">
         <PersonalInfo></PersonalInfo>
         <Education></Education>
         <Skills></Skills>

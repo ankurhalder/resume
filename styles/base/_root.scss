@@ -9,10 +9,10 @@
   .seo {
     display: none;
   }
-  //
+
   .wrapper {
     width: 100%;
-    max-width: max(900px, 60%);
+    max-width: max(1200px, 60%);
     min-height: 100dvh;
     margin: 2.5% auto 2.5% auto;
     @media (max-width: $breakpoint-desktop-wide) {
