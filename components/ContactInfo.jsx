@@ -1,23 +1,23 @@
-import PropTypes from "prop-types";
+import contact from "../data/contact"; // Adjust the path as per your project structure
 
-const ContactInfo = ({ contact }) => {
+// Contact component
+function Contact() {
   const { email, phone, nationality } = contact;
 
   return (
-    <div>
-      <p>Email: {email}</p>
-      <p>Phone: {phone}</p>
-      <p>Nationality: {nationality}</p>
+    <div className="contact-container">
+      <h2 className="section-title">Contact</h2>
+      <p className="contact-item">
+        <span className="contact-label">Email:</span> {email}
+      </p>
+      <p className="contact-item">
+        <span className="contact-label">Phone:</span> {phone}
+      </p>
+      <p className="contact-item">
+        <span className="contact-label">Nationality:</span> {nationality}
+      </p>
     </div>
   );
-};
+}
 
-ContactInfo.propTypes = {
-  contact: PropTypes.shape({
-    email: PropTypes.string.isRequired,
-    phone: PropTypes.string.isRequired,
-    nationality: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export default ContactInfo;
+export default Contact;
