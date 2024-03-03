@@ -12,24 +12,26 @@
     box-shadow: 0 15px 30px var(--black-shadow-light-1);
   }
   .name {
-    font-family: var(--font-elianto);
+    font-family: var(--font-roboto);
+    font-size: var(--font-7);
     color: var(--black);
+    font-weight: 500;
+    letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px var(--black-shadow-light);
   }
 
   .title {
+    font-family: var(--font-elianto);
+    font-size: var(--font-8);
+    color: var(--orange-4);
+    font-weight: 500;
+    letter-spacing: 2px;
     text-align: center;
-    font-size: 24px;
-    color: #666666;
-    font-style: italic;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px var(--black-shadow-light);
+    margin: 1% 0 1% 0;
   }
   .personal-info {
-    display: flex;
-    align-items: center;
+    @include flex-container(row, nowrap, center, center);
     gap: 40px;
 
     .profile-image {
