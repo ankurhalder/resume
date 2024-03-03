@@ -108,6 +108,7 @@
       background-color: var(--white-3);
       padding: 20px;
       border-radius: 20px;
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
       @media (max-width: $breakpoint-desktop-wide) {
       }
       @media (max-width: $breakpoint-desktop) {
@@ -119,6 +120,10 @@
         padding: 10px;
       }
       @media (max-width: $breakpoint-phone) {
+      }
+      &:hover {
+        transform: translateY(2px);
+        box-shadow: 0 10px 20px var(--black-shadow-medium);
       }
       .detail {
         font-family: var(--font-roboto);

@@ -44,16 +44,26 @@
   }
 
   .education-item {
+    flex: 1;
+    background-color: var(--white-3);
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    transition: transform 0.3s ease;
+    border-radius: 20px;
+    @media (max-width: $breakpoint-desktop-wide) {
+    }
+    @media (max-width: $breakpoint-desktop) {
+    }
+    @media (max-width: $breakpoint-large-tablet) {
+    }
+    @media (max-width: $breakpoint-tablet) {
+      margin: 0 0 2% 0;
+      padding: 10px;
+    }
+    @media (max-width: $breakpoint-phone) {
+    }
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 15px 30px var(--black-shadow-light-1);
     }
 
     .degree {
@@ -70,20 +80,67 @@
     }
 
     .details {
-      margin-top: 20px;
+      flex: 1;
+      background-color: var(--white-3);
+      padding: 20px;
+      border-radius: 20px;
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+        margin: 0 0 2% 0;
+        padding: 10px;
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
 
       .detail {
-        margin-bottom: 15px;
-        color: #555555;
-
-        strong {
-          color: #333333;
-          margin-right: 5px;
+        font-family: var(--font-roboto);
+        color: var(--black);
+        letter-spacing: 2px;
+        margin: 0 0 1.5% 3%;
+        font-size: var(--font-12);
+        @media (max-width: $breakpoint-desktop-wide) {
         }
-
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+          font-size: var(--font-11);
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
+        strong {
+          font-weight: 500;
+          text-transform: capitalize;
+          @media (max-width: $breakpoint-desktop-wide) {
+          }
+          @media (max-width: $breakpoint-desktop) {
+          }
+          @media (max-width: $breakpoint-large-tablet) {
+          }
+          @media (max-width: $breakpoint-tablet) {
+          }
+          @media (max-width: $breakpoint-phone) {
+          }
+        }
         span {
-          color: #444444;
-          font-weight: bold;
+          margin: 0 0 0 1%;
+          font-weight: 400;
+          @media (max-width: $breakpoint-desktop-wide) {
+          }
+          @media (max-width: $breakpoint-desktop) {
+          }
+          @media (max-width: $breakpoint-large-tablet) {
+          }
+          @media (max-width: $breakpoint-tablet) {
+          }
+          @media (max-width: $breakpoint-phone) {
+          }
         }
       }
     }
