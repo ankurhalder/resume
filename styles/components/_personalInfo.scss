@@ -4,7 +4,8 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   background-color: var(--white);
   transition: transform 0.5s ease-in-out;
-
+  overflow: hidden;
+  overflow-wrap: break-word;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -76,5 +77,11 @@
         line-height: 1.6;
       }
     }
+  }
+  .name,
+  .title,
+  .detail,
+  .about {
+    overflow-wrap: break-word;
   }
 }
