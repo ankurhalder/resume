@@ -12,22 +12,26 @@ function Education() {
           </p>
           {edu.status && (
             <p className="status">
-              <strong>Status:</strong> {edu.status}
+              <strong>Status:</strong>
+              <span>{edu.status}</span>
             </p>
           )}
           {edu.expectedGraduation && (
             <p className="expected-graduation">
-              <strong>Expected Graduation:</strong> {edu.expectedGraduation}
+              <strong>Expected Graduation:</strong>
+              <span>{edu.expectedGraduation}</span>
             </p>
           )}
           {edu.yearOfCompletion && (
             <p className="year-of-completion">
-              <strong>Year of Completion:</strong> {edu.yearOfCompletion}
+              <strong>Year of Completion:</strong>
+              <span>{edu.yearOfCompletion}</span>
             </p>
           )}
           {edu.percentage && (
             <p className="percentage">
-              <strong>Percentage:</strong> {edu.percentage}
+              <strong>Percentage:</strong>
+              <span>{edu.percentage}</span>
             </p>
           )}
         </div>
