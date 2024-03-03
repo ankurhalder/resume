@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import {
   PersonalInfo,
   Education,
@@ -14,6 +15,7 @@ function App() {
   return (
     <Fragment>
       <div className="wrapper">
+        <Analytics />
         <PersonalInfo></PersonalInfo>
         <Education></Education>
         <Skills></Skills>

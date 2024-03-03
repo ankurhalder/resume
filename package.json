@@ -16,6 +16,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -27,7 +28,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4",
-    "sass": "^1.71.1"
+    "sass": "^1.71.1",
+    "vite": "^5.1.4"
   }
 }
