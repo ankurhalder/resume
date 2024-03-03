@@ -10,6 +10,7 @@
   @media (max-width: $breakpoint-desktop-wide) {
   }
   @media (max-width: $breakpoint-desktop) {
+    padding: 30px;
   }
   @media (max-width: $breakpoint-large-tablet) {
   }
@@ -86,6 +87,7 @@
       @media (max-width: $breakpoint-desktop-wide) {
       }
       @media (max-width: $breakpoint-desktop) {
+        max-width: 150px;
       }
       @media (max-width: $breakpoint-large-tablet) {
       }
