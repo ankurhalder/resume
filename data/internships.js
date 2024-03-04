@@ -15,7 +15,7 @@ const internships = [
   {
     title: "Web Development Intern",
     company: "OCTANET SERVICES PVT LTD.",
-    location: "Unknown",
+    location: "Remote",
     startDate: "February 1, 2024",
     endDate: "March 1, 2024",
     topic: "Web Development",
