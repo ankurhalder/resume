@@ -38,6 +38,7 @@ const projects = [
       "ProfessionalAchievement",
       "NextGenLeaders",
     ],
+    githubUrl: "not public yet",
     projectLink: "https://adcomsys.uem.edu.in",
   },
   // @ Space Otaku
@@ -91,7 +92,7 @@ const projects = [
       "Responsive Web Design",
     ],
     githubUrl: "https://github.com/ankurhalder/spaceotaku",
-    projectUrl: "https://www.spaceotaku.online",
+    projectLink: "https://www.spaceotaku.online",
     license: "GNU AFFERO GENERAL PUBLIC LICENSE",
   },
 ];

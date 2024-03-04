@@ -33,30 +33,6 @@ function Projects() {
               ))}
             </ul>
           </div>
-          {project.features && (
-            <div className="project-features">
-              <p>
-                <strong>Features:</strong>
-              </p>
-              <ul className="features-list">
-                {project.features.map((feature, idx) => (
-                  <li key={idx}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {project.navigationLinks && (
-            <div className="project-navigation-links">
-              <p>
-                <strong>Navigation Links:</strong>
-              </p>
-              <ul className="navigation-links-list">
-                {project.navigationLinks.map((link, idx) => (
-                  <li key={idx}>{link}</li>
-                ))}
-              </ul>
-            </div>
-          )}
           {project.projectLink && (
             <p className="project-link">
               <a

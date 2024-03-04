@@ -58,17 +58,30 @@
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
     .projects {
+      @include flex-container(row, nowrap, space-between, flex-start);
       .left-side {
         .project-title {
-          font-size: 32px;
-          font-weight: bold;
-          color: #333333;
-          margin-bottom: 20px;
+          font-family: var(--font-roboto);
+          font-size: var(--font-10);
+          color: var(--black);
+          font-weight: 500;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          margin: 0 0 1.5% 0;
+          @media (max-width: $breakpoint-desktop-wide) {
+          }
+          @media (max-width: $breakpoint-desktop) {
+          }
+          @media (max-width: $breakpoint-large-tablet) {
+          }
+          @media (max-width: $breakpoint-tablet) {
+          }
+          @media (max-width: $breakpoint-phone) {
+          }
         }
 
         .project-duration,
-        .project-organization,
-        .project-description {
+        .project-organization {
           margin-top: 15px;
           color: #666666;
           font-size: 20px;
