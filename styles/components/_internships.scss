@@ -1,5 +1,29 @@
 .internships-container {
+  position: relative;
   padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px var(--black-shadow-light);
+  overflow: hidden;
+  overflow-wrap: break-word;
+  transition: transform 0.5s ease-in-out;
+  margin: 0 0 2% 0;
+  @include flex-container(column, nowrap, center, space-between);
+  gap: 20px;
+  @media (max-width: $breakpoint-desktop-wide) {
+  }
+  @media (max-width: $breakpoint-desktop) {
+    padding: 30px;
+  }
+  @media (max-width: $breakpoint-large-tablet) {
+  }
+  @media (max-width: $breakpoint-tablet) {
+  }
+  @media (max-width: $breakpoint-phone) {
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--black-shadow-light-1);
+  }
 
   .section-title {
     font-size: 36px;
