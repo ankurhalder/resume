@@ -49,62 +49,79 @@
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    margin-bottom: 60px;
-    transition: transform 0.3s ease;
+    background-color: var(--white-4);
+    margin: 0 0 2% 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
+    .projects {
+      .left-side {
+        .project-title {
+          font-size: 32px;
+          font-weight: bold;
+          color: #333333;
+          margin-bottom: 20px;
+        }
 
-    .project-logo {
-      max-width: 100%;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .project-duration,
+        .project-organization,
+        .project-description {
+          margin-top: 15px;
+          color: #666666;
+          font-size: 20px;
 
-      &:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          strong {
+            font-weight: bold;
+            color: #333333;
+            margin-right: 10px;
+          }
+        }
+
+        .technologies-used,
+        .project-features,
+        .project-navigation-links {
+          margin-top: 30px;
+          color: #666666;
+          font-size: 20px;
+
+          strong {
+            font-weight: bold;
+            color: #333333;
+            margin-right: 10px;
+          }
+        }
+      }
+      .project-logo {
+        margin: 0 0 1% 1%;
+        width: 100%;
+        max-width: 120px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 1px solid var(--black-shadow-medium);
+        box-shadow: 0 8px 16px var(--black-shadow-light);
+        transition: transform 0.3s ease, filter 0.3s ease;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+          max-width: 100px;
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+          max-width: 70px;
+          border-radius: 10px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
+        &:hover {
+          transform: scale(1.05);
+          filter: brightness(1.1);
+        }
       }
     }
-
-    .project-title {
-      font-size: 32px;
-      font-weight: bold;
-      color: #333333;
-      margin-bottom: 20px;
-    }
-
-    .project-duration,
-    .project-organization,
-    .project-description {
-      margin-top: 15px;
-      color: #666666;
-      font-size: 20px;
-
-      strong {
-        font-weight: bold;
-        color: #333333;
-        margin-right: 10px;
-      }
-    }
-
-    .technologies-used,
-    .project-features,
-    .project-navigation-links {
-      margin-top: 30px;
-      color: #666666;
-      font-size: 20px;
-
-      strong {
-        font-weight: bold;
-        color: #333333;
-        margin-right: 10px;
-      }
-    }
-
     .features-list,
     .navigation-links-list {
       list-style-type: none;
