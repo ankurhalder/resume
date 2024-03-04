@@ -10,7 +10,7 @@ function InternshipCard({ internship }) {
     endDate,
     topic,
     certificationCredential,
-    certificateImage,
+
     description,
   } = internship;
 
@@ -31,11 +31,6 @@ function InternshipCard({ internship }) {
       >
         View Certificate
       </a>
-      <img
-        className="internship-certificate-image"
-        src={certificateImage}
-        alt={`${company} Certificate`}
-      />
       <p className="internship-description">{description}</p>
     </div>
   );
