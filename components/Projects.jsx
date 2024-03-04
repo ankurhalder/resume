@@ -40,7 +40,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Project
+                {project.projectLink}
               </a>
             </p>
           )}
@@ -51,7 +51,9 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View on GitHub
+                {project.githubUrl === "not public yet"
+                  ? "Not public yet"
+                  : project.githubUrl}
               </a>
             </p>
           )}

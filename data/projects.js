@@ -1,7 +1,7 @@
 const projects = [
   // @ AdComSys 2024 Website
   {
-    logo: "/adcomsys.png",
+    logo: "/projects/adcomsys.png",
     title: "AdComSys 2024 Website",
     duration: "May 2023 - Sep 2023",
     organization: "University of Engineering & Management (UEM)",
@@ -43,7 +43,7 @@ const projects = [
   },
   // @ Space Otaku
   {
-    logo: "/spaceotaku.png",
+    logo: "/projects/spaceotaku.png",
     title: "Space Otaku",
     duration: "Jan 2023 - Sep 2023",
     organization: "University of Engineering & Management (UEM)",
