@@ -79,69 +79,156 @@
 
     .provider,
     .completion-date {
-      margin-top: 15px;
-      color: #666666;
-      font-size: 20px;
-
+      font-family: var(--font-roboto);
+      color: var(--black);
+      letter-spacing: 2px;
+      margin: 0 0 1.5% 0;
+      font-size: var(--font-12);
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+        font-size: var(--font-11);
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
       strong {
-        font-weight: bold;
-        color: #333333;
-        margin-right: 10px;
+        font-weight: 500;
+        text-transform: capitalize;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
       }
     }
 
     .description {
-      margin-top: 30px;
-      color: #666666;
-      line-height: 1.8;
-      font-size: 22px;
+      font-family: var(--font-roboto);
+      color: var(--black);
+      letter-spacing: 1px;
+      line-height: 1.5;
+      font-size: var(--font-11);
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: var(--font-10);
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
     }
 
     .topics {
-      margin-top: 30px;
-      color: #666666;
-      font-size: 22px;
-
+      font-family: var(--font-roboto);
+      color: var(--black);
+      letter-spacing: 2px;
+      margin: 1% 0 1.5% 0;
+      font-size: var(--font-11);
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+        font-size: var(--font-11);
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
       strong {
-        font-weight: bold;
-        color: #333333;
-        margin-right: 10px;
+        font-weight: 500;
+        text-transform: capitalize;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
       }
     }
 
     .topics-list {
-      list-style-type: none;
-      padding: 0;
-
+      @include flex-container(row, wrap, flex-start, flex-start);
       .topic {
-        display: inline-block;
-        padding: 12px 24px;
-        border-radius: 40px;
-        background-color: #007bff;
-        color: #ffffff;
-        font-size: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: var(--blue-1);
+        margin: 0 1% 1% 0;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        font-family: var(--font-roboto);
+        font-size: var(--font-12);
+        color: var(--white);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+          padding: 7px 14px;
+          font-size: var(--font-11);
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
         &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
+          transform: scale(1.05);
+          box-shadow: 0 8px 16px -5px rgba(0, 123, 255, 0.5);
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
       }
     }
 
     .certificate-link {
-      margin-top: 40px;
-
       a {
-        color: #007bff;
+        color: var(--blue-1);
+        margin: 0 0 0 1%;
+        font-size: var(--font-12);
+        letter-spacing: 4px;
+        font-weight: 500;
         text-decoration: none;
-        font-size: 22px;
-        transition: color 0.3s ease;
-
+        transition: color 0.3s ease-in-out;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
         &:hover {
-          color: #0056b3;
+          color: var(--blue-3);
         }
       }
     }
