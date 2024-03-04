@@ -82,28 +82,35 @@
 
         .project-duration,
         .project-organization {
-          margin-top: 15px;
-          color: #666666;
-          font-size: 20px;
-
-          strong {
-            font-weight: bold;
-            color: #333333;
-            margin-right: 10px;
+          font-family: var(--font-roboto);
+          color: var(--black);
+          letter-spacing: 2px;
+          margin: 0 0 1.5% 0;
+          font-size: var(--font-12);
+          @media (max-width: $breakpoint-desktop-wide) {
           }
-        }
-
-        .technologies-used,
-        .project-features,
-        .project-navigation-links {
-          margin-top: 30px;
-          color: #666666;
-          font-size: 20px;
-
+          @media (max-width: $breakpoint-desktop) {
+          }
+          @media (max-width: $breakpoint-large-tablet) {
+            font-size: var(--font-11);
+          }
+          @media (max-width: $breakpoint-tablet) {
+          }
+          @media (max-width: $breakpoint-phone) {
+          }
           strong {
-            font-weight: bold;
-            color: #333333;
-            margin-right: 10px;
+            font-weight: 500;
+            text-transform: capitalize;
+            @media (max-width: $breakpoint-desktop-wide) {
+            }
+            @media (max-width: $breakpoint-desktop) {
+            }
+            @media (max-width: $breakpoint-large-tablet) {
+            }
+            @media (max-width: $breakpoint-tablet) {
+            }
+            @media (max-width: $breakpoint-phone) {
+            }
           }
         }
       }
@@ -132,44 +139,6 @@
         &:hover {
           transform: scale(1.05);
           filter: brightness(1.1);
-        }
-      }
-    }
-    .features-list,
-    .navigation-links-list {
-      list-style-type: none;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        padding: 8px 16px;
-        border-radius: 20px;
-        background-color: #007bff;
-        color: #ffffff;
-        font-size: 16px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
-        }
-      }
-    }
-
-    .project-link,
-    .project-github-link {
-      margin-top: 30px;
-
-      a {
-        color: #007bff;
-        text-decoration: none;
-        font-size: 20px;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #0056b3;
         }
       }
     }
