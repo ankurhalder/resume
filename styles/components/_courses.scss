@@ -114,9 +114,9 @@
         }
       }
       .certificate-image {
-        margin: 0 0 0 1%;
+        margin: 0 0 1% 1%;
         width: 100%;
-        max-width: 170px;
+        max-width: 120px;
         object-fit: cover;
         border-radius: 20px;
         border: 1px solid var(--black-shadow-medium);
@@ -125,10 +125,11 @@
         @media (max-width: $breakpoint-desktop-wide) {
         }
         @media (max-width: $breakpoint-desktop) {
-          max-width: 150px;
+          max-width: 100px;
         }
         @media (max-width: $breakpoint-large-tablet) {
-          max-width: 120px;
+          max-width: 70px;
+          border-radius: 10px;
         }
         @media (max-width: $breakpoint-tablet) {
         }
@@ -216,8 +217,11 @@
         @media (max-width: $breakpoint-tablet) {
           padding: 7px 14px;
           font-size: var(--font-11);
+          margin: 0 1% 5% 0;
         }
         @media (max-width: $breakpoint-phone) {
+          padding: 5px 10px;
+          font-size: var(--font-11);
         }
         &:hover {
           transform: scale(1.05);
