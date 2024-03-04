@@ -1,65 +1,63 @@
-/* Internships.scss */
-
 .internships-container {
   padding: 40px;
-}
 
-.section-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.internship-card {
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  margin-bottom: 40px;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .internship-title {
-    font-size: 24px;
+  .section-title {
+    font-size: 36px;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
   }
 
-  .internship-company,
-  .internship-location,
-  .internship-dates,
-  .internship-topic,
-  .internship-description {
-    color: #666666;
-    margin-bottom: 15px;
-  }
-
-  .internship-dates {
-    font-weight: bold;
-  }
-
-  .internship-certificate {
-    display: inline-block;
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  .internship-card {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
 
     &:hover {
-      color: #0056b3;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
-  }
 
-  .internship-certificate-image {
-    display: block;
-    margin-top: 20px;
-    max-width: 100%;
-    border-radius: 8px;
+    .internship-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .internship-company,
+    .internship-location,
+    .internship-dates,
+    .internship-topic,
+    .internship-description {
+      color: #666666;
+      margin-bottom: 15px;
+    }
+
+    .internship-dates {
+      font-weight: bold;
+    }
+
+    .internship-certificate {
+      display: inline-block;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+
+    .internship-certificate-image {
+      display: block;
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 8px;
+    }
   }
 }
