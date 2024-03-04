@@ -6,18 +6,22 @@ function Projects() {
       <h2 className="section-title">Projects</h2>
       {projects.map((project, index) => (
         <div key={index} className="project">
-          <img
-            src={project.logo}
-            alt={project.title}
-            className="project-logo"
-          />
-          <h3 className="project-title">{project.title}</h3>
-          <p className="project-duration">
-            <strong>Duration:</strong> {project.duration}
-          </p>
-          <p className="project-organization">
-            <strong>Organization:</strong> {project.organization}
-          </p>
+          <div className="projects">
+            <div className="left-side">
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-duration">
+                <strong>Duration:</strong> {project.duration}
+              </p>
+              <p className="project-organization">
+                <strong>Organization:</strong> {project.organization}
+              </p>
+            </div>
+            <img
+              src={project.logo}
+              alt={project.title}
+              className="project-logo"
+            />
+          </div>
           <p className="project-description">{project.description}</p>
           <div className="technologies-used">
             <p>
