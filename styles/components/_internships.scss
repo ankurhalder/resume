@@ -26,31 +26,56 @@
   }
 
   .section-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333333;
+    font-family: var(--font-elianto);
+    font-size: var(--font-8);
+    color: var(--black);
+    font-weight: 500;
+    letter-spacing: 2px;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 1% 0 1.5% 0;
+    @media (max-width: $breakpoint-desktop-wide) {
+    }
+    @media (max-width: $breakpoint-desktop) {
+    }
+    @media (max-width: $breakpoint-large-tablet) {
+    }
+    @media (max-width: $breakpoint-tablet) {
+    }
+    @media (max-width: $breakpoint-phone) {
+    }
   }
 
   .internship-card {
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    margin-bottom: 40px;
-    transition: transform 0.3s ease;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--white-4);
+    margin: 0 0 2% 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
 
     .internship-title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333333;
-      margin-bottom: 10px;
+      font-family: var(--font-roboto);
+      font-size: var(--font-10);
+      color: var(--black);
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 0 0 1.5% 0;
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
     }
 
     .internship-company,
