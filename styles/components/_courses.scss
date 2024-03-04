@@ -1,63 +1,65 @@
 .courses-container {
-  padding: 40px;
+  padding: 50px 20px;
 
   .section-title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     color: #333333;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
 
   .course {
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     transition: transform 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
 
     .title {
-      font-size: 24px;
+      font-size: 32px;
       font-weight: bold;
       color: #333333;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .provider,
     .completion-date {
-      margin-top: 10px;
+      margin-top: 15px;
       color: #666666;
-      font-size: 16px;
+      font-size: 20px;
 
       strong {
         font-weight: bold;
         color: #333333;
-        margin-right: 5px;
+        margin-right: 10px;
       }
     }
 
     .description {
-      margin-top: 20px;
+      margin-top: 30px;
       color: #666666;
-      line-height: 1.6;
-      font-size: 18px;
+      line-height: 1.8;
+      font-size: 22px;
     }
 
     .topics {
-      margin-top: 20px;
+      margin-top: 30px;
       color: #666666;
-      font-size: 16px;
+      font-size: 22px;
 
       strong {
         font-weight: bold;
         color: #333333;
-        margin-right: 5px;
+        margin-right: 10px;
       }
     }
 
@@ -67,29 +69,29 @@
 
       .topic {
         display: inline-block;
-        padding: 8px 16px;
-        border-radius: 20px;
+        padding: 12px 24px;
+        border-radius: 40px;
         background-color: #007bff;
         color: #ffffff;
-        font-size: 16px;
-        margin-right: 10px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         &:hover {
           transform: translateY(-3px);
-          box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+          box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
         }
       }
     }
 
     .certificate-link {
-      margin-top: 20px;
+      margin-top: 40px;
 
       a {
         color: #007bff;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 22px;
         transition: color 0.3s ease;
 
         &:hover {
@@ -99,14 +101,14 @@
     }
 
     .certificate-image {
-      margin-top: 20px;
+      margin-top: 40px;
       max-width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       }
     }
   }
