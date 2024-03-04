@@ -20,7 +20,7 @@ const internships = [
     endDate: "March 1, 2024",
     topic: "Web Development",
     certificationCredential:
-      "https://verification.givemycertificate.com/v/Oc66c11f-4/ae-452e-80d5-53141dcla3de",
+      "https://verification.givemycertificate.com/v/0c66c11f-47ae-452e-80d5-53141dc1a3de",
     certificateImage: "",
     description:
       "During the internship period, Ankur Halder demonstrated exceptional dedication, enthusiasm, and a strong willingness to learn. They actively engaged in various projects and tasks assigned to them, exhibiting remarkable skills and a high level of professionalism.",
