@@ -56,57 +56,87 @@
       transform: translateY(-5px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
+    .courses {
+      @include flex-container(row, nowrap, space-between, flex-start);
+      .left-side {
+        .title {
+          font-family: var(--font-roboto);
+          font-size: var(--font-10);
+          color: var(--black);
+          font-weight: 500;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          margin: 0 0 1.5% 0;
+          @media (max-width: $breakpoint-desktop-wide) {
+          }
+          @media (max-width: $breakpoint-desktop) {
+          }
+          @media (max-width: $breakpoint-large-tablet) {
+          }
+          @media (max-width: $breakpoint-tablet) {
+          }
+          @media (max-width: $breakpoint-phone) {
+          }
+        }
 
-    .title {
-      font-family: var(--font-roboto);
-      font-size: var(--font-10);
-      color: var(--black);
-      font-weight: 500;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin: 0 0 1.5% 0;
-      @media (max-width: $breakpoint-desktop-wide) {
+        .provider,
+        .completion-date {
+          font-family: var(--font-roboto);
+          color: var(--black);
+          letter-spacing: 2px;
+          margin: 0 0 1.5% 0;
+          font-size: var(--font-12);
+          @media (max-width: $breakpoint-desktop-wide) {
+          }
+          @media (max-width: $breakpoint-desktop) {
+          }
+          @media (max-width: $breakpoint-large-tablet) {
+            font-size: var(--font-11);
+          }
+          @media (max-width: $breakpoint-tablet) {
+          }
+          @media (max-width: $breakpoint-phone) {
+          }
+          strong {
+            font-weight: 500;
+            text-transform: capitalize;
+            @media (max-width: $breakpoint-desktop-wide) {
+            }
+            @media (max-width: $breakpoint-desktop) {
+            }
+            @media (max-width: $breakpoint-large-tablet) {
+            }
+            @media (max-width: $breakpoint-tablet) {
+            }
+            @media (max-width: $breakpoint-phone) {
+            }
+          }
+        }
       }
-      @media (max-width: $breakpoint-desktop) {
-      }
-      @media (max-width: $breakpoint-large-tablet) {
-      }
-      @media (max-width: $breakpoint-tablet) {
-      }
-      @media (max-width: $breakpoint-phone) {
-      }
-    }
-
-    .provider,
-    .completion-date {
-      font-family: var(--font-roboto);
-      color: var(--black);
-      letter-spacing: 2px;
-      margin: 0 0 1.5% 0;
-      font-size: var(--font-12);
-      @media (max-width: $breakpoint-desktop-wide) {
-      }
-      @media (max-width: $breakpoint-desktop) {
-      }
-      @media (max-width: $breakpoint-large-tablet) {
-        font-size: var(--font-11);
-      }
-      @media (max-width: $breakpoint-tablet) {
-      }
-      @media (max-width: $breakpoint-phone) {
-      }
-      strong {
-        font-weight: 500;
-        text-transform: capitalize;
+      .certificate-image {
+        margin: 0 0 0 1%;
+        width: 100%;
+        max-width: 170px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 1px solid var(--black-shadow-medium);
+        box-shadow: 0 8px 16px var(--black-shadow-light);
+        transition: transform 0.3s ease, filter 0.3s ease;
         @media (max-width: $breakpoint-desktop-wide) {
         }
         @media (max-width: $breakpoint-desktop) {
+          max-width: 150px;
         }
         @media (max-width: $breakpoint-large-tablet) {
+          max-width: 120px;
         }
         @media (max-width: $breakpoint-tablet) {
         }
         @media (max-width: $breakpoint-phone) {
+        }
+        &:hover {
+          transform: scale(1.05);
+          filter: brightness(1.1);
         }
       }
     }
@@ -230,18 +260,6 @@
         &:hover {
           color: var(--blue-3);
         }
-      }
-    }
-
-    .certificate-image {
-      margin-top: 40px;
-      max-width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       }
     }
   }

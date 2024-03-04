@@ -5,18 +5,22 @@ function Courses() {
       <h2 className="section-title">Courses</h2>
       {courses.map((course, index) => (
         <div key={index} className="course">
-          <h3 className="title">{course.title}</h3>
-          <p className="provider">
-            <strong>Provider:</strong> {course.provider}
-          </p>
-          <p className="completion-date">
-            <strong>Completion Date:</strong> {course.completionDate}
-          </p>
-          <img
-            className="certificate-image"
-            src={course.certificateImageUrl}
-            alt={course.title}
-          />
+          <div className="courses">
+            <div className="left-side">
+              <h3 className="title">{course.title}</h3>
+              <p className="provider">
+                <strong>Provider:</strong> {course.provider}
+              </p>
+              <p className="completion-date">
+                <strong>Completion Date:</strong> {course.completionDate}
+              </p>
+            </div>
+            <img
+              className="certificate-image"
+              src={course.certificateImageUrl}
+              alt={course.title}
+            />
+          </div>
           <p className="description">{course.description}</p>
           <p className="topics">
             <strong>Topics:</strong>
