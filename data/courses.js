@@ -19,7 +19,7 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/verify/professional-cert/4GVM3WFXRHB6",
-    certificateImageUrl: "/meta-front-end-developer",
+    certificateImageUrl: "/courses/meta-front-end-developer-certificate.png",
     skillsGained: [
       "Frontend Development",
       "HTML",
@@ -50,7 +50,7 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/share/2927957967a7315b351bfa6bd46a23f8",
-    certificateImageUrl: "/meta-back-end-developer",
+    certificateImageUrl: "/courses/meta-back-end-developer-certificate.png",
     skillsGained: [
       "Backend Development",
       "Python",
@@ -84,7 +84,7 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/share/5ef6a47322c1b8eebb22bd7ab3e7d524",
-    certificateImageUrl: "/meta-database-engineer",
+    certificateImageUrl: "/courses/meta-database-engineer-certificate.png",
     skillsGained: [
       "Database Management",
       "SQL Syntax",
@@ -111,7 +111,8 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/share/f67a6bed791511d901a8f0c82cffa946",
-    certificateImageUrl: "/google-ux-design",
+    certificateImageUrl:
+      "/courses/google-ux-design-professional-certificate.png",
     skillsGained: [
       "User Experience Design",
       "UX Research",
@@ -142,7 +143,7 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/share/af1fbaa9ef21b87b61c7a57302c08c46",
-    certificateImageUrl: "/ibm-front-end-developer",
+    certificateImageUrl: "/courses/ibm.png",
     skillsGained: [
       "HTML",
       "CSS",
@@ -175,7 +176,7 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/share/ba5ff8d72ff44cb134d5bf2c75358cef",
-    certificateImageUrl: "/ibm-back-end-developer",
+    certificateImageUrl: "/courses/ibm.png",
     skillsGained: [
       "Python",
       "Django",
@@ -212,7 +213,8 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/share/919e319973e94f8f743fd474381fe726",
-    certificateImageUrl: "/ibm-full-stack-software-developer",
+    certificateImageUrl:
+      "/courses/ibm-full-stack-software-developer-professional-cert.png",
     skillsGained: [
       "Git (Software)",
       "Cloud Applications",
@@ -245,7 +247,7 @@ const courses = [
     certificateLink:
       "https://coursera.org/share/4d1514dfd624da601f6d753a6fec2746",
     certificateImageUrl:
-      "/applied-software-engineering-fundamentals-certificate.jpg",
+      "/courses/applied-software-engineering-fundamentals.png",
     skillsGained: [
       "Software Design and Architecture",
       "Python Programming",
@@ -271,7 +273,7 @@ const courses = [
     ],
     certificateLink:
       "https://www.udemy.com/certificate/UC-19c4ac79-892a-47ad-b473-06600f7300c8/",
-    certificateImageUrl: "/complete-javascript-course-2024-certificate.jpg",
+    certificateImageUrl: "/courses/udemy.png",
     skillsGained: [
       "Advanced JavaScript",
       "Problem-solving",
@@ -296,7 +298,7 @@ const courses = [
     ],
     certificateLink:
       "https://www.udemy.com/certificate/UC-3b120d82-005f-43b9-a60e-2fe949bb1f8c/",
-    certificateImageUrl: "/ultimate-react-course-2024-certificate.jpg",
+    certificateImageUrl: "/courses/udemy.png",
     skillsGained: [
       "Advanced React development",
       "State management with Redux",
@@ -332,7 +334,7 @@ const courses = [
     ],
     certificateLink:
       "https://www.udemy.com/certificate/UC-ea6816f6-5c07-4069-870d-65486f34d3ef/",
-    certificateImageUrl: "/node-js-bootcamp-2024-certificate.jpg",
+    certificateImageUrl: "/courses/udemy.png",
     skillsGained: [
       "Node.js development",
       "Express framework",
@@ -367,7 +369,7 @@ const courses = [
     ],
     certificateLink:
       "https://www.udemy.com/certificate/UC-fc0143a4-6b19-4e07-bcee-53f7c1f9fd1d/",
-    certificateImageUrl: "/next-js-react-complete-guide-certificate.jpg",
+    certificateImageUrl: "/courses/udemy.png",
     skillsGained: [
       "Next.js development",
       "React Server Components",
